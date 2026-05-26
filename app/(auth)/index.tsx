@@ -170,10 +170,10 @@ export default function LandingScreen() {
               router.push('/(auth)/login');
             }}
             style={({ pressed }) => ({
-              height: 54,
-              borderRadius: 16,
+              height: 58,
+              borderRadius: 18,
               borderWidth: 1,
-              borderColor: '#1E293B',
+              borderColor: '#334155',
               alignItems: 'center',
               justifyContent: 'center',
               width: '100%',

@@ -534,7 +534,7 @@ export default function VotesScreen() {
           contentContainerStyle={{
             paddingHorizontal: 16,
             paddingTop: 4,
-            paddingBottom: insets.bottom + 84,
+            paddingBottom: insets.bottom + 100,
           }}
           showsVerticalScrollIndicator={false}
           refreshControl={

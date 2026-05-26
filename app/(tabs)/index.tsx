@@ -117,7 +117,7 @@ function GroupCard({ item }: { item: MemberRow }) {
         <View
           className="px-2 py-0.5 rounded-full"
           style={{
-            backgroundColor: role === 'admin' ? 'rgba(34,197,94,0.15)' : '#1E293B',
+            backgroundColor: role === 'admin' ? 'rgba(34,197,94,0.22)' : '#1E293B',
           }}
         >
           <Text

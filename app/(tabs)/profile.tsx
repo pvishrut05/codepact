@@ -243,14 +243,14 @@ export default function ProfileScreen() {
   return (
     <View style={{ flex: 1, backgroundColor: '#000000' }}>
       {/* Header */}
-      <View style={{ paddingTop: insets.top + 8, paddingHorizontal: 20, paddingBottom: 12 }}>
+      <View style={{ paddingTop: insets.top + 8, paddingHorizontal: 16, paddingBottom: 12 }}>
         <Text style={{ fontFamily: 'PlusJakartaSans_700Bold', color: '#F8FAFC', fontSize: 28 }}>
           Profile
         </Text>
       </View>
 
       <ScrollView
-        contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: insets.bottom + 84 }}
+        contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: insets.bottom + 100 }}
         showsVerticalScrollIndicator={false}
       >
         {/* Avatar + identity */}
@@ -258,9 +258,9 @@ export default function ProfileScreen() {
           <View
             style={{
               width: 80, height: 80, borderRadius: 40,
-              backgroundColor: color + '25',
+              backgroundColor: color + '30',
               borderWidth: 2,
-              borderColor: color + '60',
+              borderColor: color + '80',
               alignItems: 'center', justifyContent: 'center',
               marginBottom: 14,
             }}
@@ -336,7 +336,11 @@ export default function ProfileScreen() {
             icon="card-outline"
             label="Manage Subscription"
             onPress={() => {
-              // TODO: RevenueCatUI.presentCustomerCenter() — uncomment when Apple Developer account is set up
+              Alert.alert(
+                'Manage Subscription',
+                'Full subscription management will be available once the app launches on the App Store.',
+                [{ text: 'OK' }],
+              );
             }}
           />
           <View style={{ height: 1, backgroundColor: '#1E293B', marginLeft: 64 }} />

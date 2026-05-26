@@ -113,7 +113,7 @@ export default function GroupCreateScreen() {
         <View className="flex-1 items-center justify-center px-8">
           <View
             className="w-20 h-20 rounded-full items-center justify-center"
-            style={{ backgroundColor: 'rgba(34,197,94,0.15)', marginBottom: 24 }}
+            style={{ backgroundColor: 'rgba(34,197,94,0.25)', marginBottom: 24 }}
           >
             <Ionicons name="checkmark-circle" size={40} color="#22C55E" />
           </View>
@@ -227,7 +227,7 @@ export default function GroupCreateScreen() {
             placeholderTextColor="#475569"
             className="bg-surface text-foreground rounded-2xl px-4 py-4"
             style={{ fontFamily: 'PlusJakartaSans_400Regular', fontSize: 16,
-              borderWidth: errors.name ? 1 : 0, borderColor: errors.name ? '#EF4444' : undefined }}
+              borderWidth: 1, borderColor: errors.name ? '#EF4444' : '#1E293B' }}
             maxLength={40}
             returnKeyType="next"
             accessibilityLabel="Group name"
@@ -238,7 +238,7 @@ export default function GroupCreateScreen() {
         <Field label="Penalty per Missed Day ($)" error={errors.penalty}>
           <View
             className="bg-surface rounded-2xl flex-row items-center px-4"
-            style={{ borderWidth: errors.penalty ? 1 : 0, borderColor: errors.penalty ? '#EF4444' : undefined }}
+            style={{ borderWidth: 1, borderColor: errors.penalty ? '#EF4444' : '#1E293B' }}
           >
             <Text className="text-muted text-lg mr-1" style={{ fontFamily: 'PlusJakartaSans_500Medium' }}>
               $

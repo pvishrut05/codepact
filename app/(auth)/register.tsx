@@ -86,7 +86,7 @@ export default function RegisterScreen() {
             hitSlop={10}
             className="mb-8 self-start p-1"
           >
-            <Ionicons name="chevron-back" size={26} color="#F8FAFC" />
+            <Ionicons name="arrow-back" size={24} color="#94A3B8" />
           </Pressable>
 
           {/* Header */}
@@ -195,7 +195,7 @@ export default function RegisterScreen() {
             >
               Already have an account?
             </Text>
-            <Pressable onPress={() => router.back()}>
+            <Pressable onPress={() => router.push('/(auth)/login')}>
               <Text
                 className="text-brand-green text-sm"
                 style={{ fontFamily: 'PlusJakartaSans_600SemiBold' }}

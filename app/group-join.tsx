@@ -112,7 +112,7 @@ export default function GroupJoinScreen() {
       >
         <View
           className="w-20 h-20 rounded-full items-center justify-center"
-          style={{ backgroundColor: 'rgba(34,197,94,0.15)', marginBottom: 24 }}
+          style={{ backgroundColor: 'rgba(34,197,94,0.25)', marginBottom: 24 }}
         >
           <Ionicons name="checkmark-circle" size={40} color="#22C55E" />
         </View>
@@ -273,8 +273,8 @@ export default function GroupJoinScreen() {
             fontSize: 24,
             letterSpacing: 6,
             textAlign: 'center',
-            borderWidth: codeError ? 1 : 0,
-            borderColor: codeError ? '#EF4444' : undefined,
+            borderWidth: 1,
+            borderColor: codeError ? '#EF4444' : '#1E293B',
             marginBottom: 4,
           }}
           accessibilityLabel="Invite code"
@@ -305,7 +305,7 @@ export default function GroupJoinScreen() {
           accessibilityRole="button"
         >
           {lookupLoading ? (
-            <ActivityIndicator color="#94A3B8" />
+            <ActivityIndicator color="#F8FAFC" />
           ) : (
             <Text
               style={{
