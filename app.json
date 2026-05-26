@@ -1,15 +1,21 @@
 {
   "expo": {
-    "name": "codepact",
+    "name": "CodePact",
     "slug": "codepact",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "codepact",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.codepact.app",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "CodePact needs access to your photo library so you can upload your LeetCode screenshot as daily proof.",
+        "NSCameraUsageDescription": "CodePact needs camera access so you can take a photo of your LeetCode completion as daily proof.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -38,7 +44,9 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-secure-store",
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true,
